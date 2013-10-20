@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ciaramcelmer.wfactory"
+    android:versionCode="11"
+    android:versionName="1.60" >
+
+    <uses-sdk
+        android:minSdkVersion="3"
+        android:targetSdkVersion="17" />
+    
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+
+    
+    <application
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.ciaramcelmer.wfactory.MainActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask" 
+            android:windowSoftInputMode="stateHidden">
+       
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            
+        </activity>
+        
+        <activity android:name="com.ciaramcelmer.wfactory.OptionsActivity" />
+		<activity android:name="com.ciaramcelmer.wfactory.NewGameActivity" />
+		<activity android:name="com.ciaramcelmer.wfactory.DefineActivity" />
+		<activity android:name="com.ciaramcelmer.wfactory.GoogleDefineActivity" />
+		<activity android:name="com.ciaramcelmer.wfactory.SavedGameList" />
+		<activity android:name="com.ciaramcelmer.wfactory.CountDown" />
+		<activity android:name="com.ciaramcelmer.wfactory.DictionaryThread" />
+		<activity android:name="com.ciaramcelmer.wfactory.NineLetterWord" />
+		<activity android:name="com.ciaramcelmer.wfactory.PlayerWord" />
+		<activity android:name="com.ciaramcelmer.wfactory.SavedGame" />
+		<activity android:name="com.ciaramcelmer.wfactory.SavedGameListAdapter" />
+		<activity android:name="com.ciaramcelmer.wfactory.DictClient" />
+		<activity android:name="com.ciaramcelmer.wfactory.ShakeDetector" />
+		<activity android:name="com.ciaramcelmer.wfactory.SmhImport" />
+		<activity android:name="com.ciaramcelmer.wfactory.TargetGridView" />
+		<activity android:name="com.ciaramcelmer.wfactory.WordAdapter" />
+
+	</application>
+</manifest>

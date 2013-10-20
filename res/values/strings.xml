@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Word Factory</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="good">Good:</string>
+    <string name="very_good">Very Good:</string>
+    <string name="excellent">Goal Word</string>
+    <string name="you">Score</string>
+    <string name="del">Delete</string>
+    <string name="new_target_game">Word Factory</string>
+	<string-array name="dictionarynames">
+	    	<item>American</item>
+	    	<item>British</item>
+	</string-array>
+	<string-array name="dictionaryvalues">
+	    	<item>0</item>
+	    	<item>1</item>
+	</string-array>
+	    	<string name="save_current_game">Save Current Game</string>
+	    	<string name="t1">Timer</string>
+	    	<string name="t2">Timer</string>
+</resources>

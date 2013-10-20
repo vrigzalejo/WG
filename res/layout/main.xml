@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/oranges"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/targetCountLayout"
+        android:layout_width="300dp"
+        android:layout_height="74dp"
+        android:layout_weight="0.11"
+        android:background="#55FFFFFF"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:visibility="invisible" >
+
+        <TextView
+            android:id="@+id/targetCountGood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="#800000"
+            android:textSize="16sp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/very_good"
+            android:textColor="#800000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/targetVeryCountGood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="#800000"
+            android:textSize="16sp"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+       
+    <LinearLayout
+        android:id="@+id/playArea"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="372dp"
+            android:layout_height="match_parent" >
+
+            <ProgressBar
+                android:id="@+id/gameTimer"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="320dp"
+                android:layout_height="25dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:indeterminate="false"
+                android:progressDrawable="@drawable/progress_horizontal" />
+
+            <com.ciaramcelmer.wfactory.TargetGridView
+                android:id="@+id/targetGrid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/gameTimer"
+                android:layout_below="@+id/gameTimer"
+                android:layout_margin="2dp"
+                android:layout_marginLeft="26dp" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/targetGrid"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="@string/t2"
+                android:textColorHint="#00FFFF" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <EditText
+                android:id="@+id/enteredWord"
+                android:layout_width="300dp"
+                android:layout_height="45dp"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/clearWord"
+                android:background="#11FFFFFF"
+                android:cursorVisible="true"
+                android:ems="10"
+                android:inputType="none"
+                android:textColor="#800000"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+              <Button
+                android:id="@+id/clearWord"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/buttons"
+                android:gravity="center"
+                android:text="@string/del"
+                android:textSize="16sp" />
+
+           
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="184dp" >
+
+            <ListView
+                android:id="@+id/playerWordList"
+                android:layout_width="184dp"
+                android:layout_height="158dp"
+                android:layout_alignParentLeft="true"
+                android:cacheColorHint="#800000"
+                android:clickable="false" />
+
+            <Button
+                android:id="@+id/submitWord"
+                style="@style/button_text"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_margin="10dp"
+                android:background="@drawable/buttons"
+                android:text="Submit"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/timeRemaining"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/submitWord"
+                android:gravity="center"
+                android:text=""
+                android:textColor="#800000"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/timeRemaining"
+                android:layout_toRightOf="@+id/playerWordList"
+                android:text="@string/excellent"
+                android:textColor="#800000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/helpButton"
+                style="@style/button_text"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/targetCountPlayer"
+                android:layout_margin="10dp"
+                android:layout_toRightOf="@+id/playerWordList"
+                android:text="Help"
+                android:textSize="16sp"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/targetCountPlayerLabel"
+                android:layout_width="50dp"
+                android:layout_height="44dp"
+                android:layout_above="@+id/textView2"
+                android:layout_alignLeft="@+id/textView2"
+                android:text="@string/you"
+                android:textColor="#800000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/targetCountPlayer"
+                android:layout_width="111dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/timeRemaining"
+                android:layout_alignBottom="@+id/timeRemaining"
+                android:layout_alignRight="@+id/submitWord"
+                android:text="dgsyafgu"
+                android:textColor="#800000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/targetCountExcellent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/helpButton"
+                android:layout_alignBottom="@+id/helpButton"
+                android:layout_alignLeft="@+id/targetCountPlayer"
+                android:text="vchzvb"
+                android:textColor="#800000"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    </LinearLayout>
+
+             

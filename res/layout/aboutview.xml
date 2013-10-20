@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/oranges"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/aboutscrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:paddingTop="15dp"
+                android:text="This is your Goal: "
+                android:textColor="#000000"
+                android:textStyle="bold"
+                 android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/goalText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:paddingTop="15dp"
+                android:text="Your main goal is to form or create a four letter or more words in a  default 3x3 letter tiles.\n\nEach letter can only be used once, and each word must contain the center letter.\n\nNo foreign words, no words with initial capital, no hypenated words. "
+                android:textColor="#000000" 
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:paddingTop="15dp"
+                android:text="How to play: "
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:text="*In the menu form, choose the &apos;Word Count&apos; of your game to make your list of word must be limited.\n\n*In the&apos;Option&apos;button you can changed your dictionary and press the checkbox if you want to disable or enable the &apos;Timer&apos;, &apos;Keep Screen on&apos; and &apos;Sound&apos;\n\n*Press the &apos;Start Game&apos; button. (Only words in this word factory dictionary are acceptable).\n\n*Touch the letter in the tile of letter to make a word, then click &apos;Submit&apos; button to save the words.\n\n*To delete the partial letter press &apos;Del&apos;or the last letter that you click in the letter of tiles.\n\n*To search a word's defintion, Select the word on the Player Word List.\n\n*To reshuffle a new word, turn the screen downwards for 1seconds and turn again towards but previously gotten words were not counted after reshuffling.\n\n*When the timer runs out, any words you missed are displayed or if your not timed game, Select the &apos;Score&apos; from the menu to see how you did.\n\n* Any current game can be save just click &apos;Save&apos; in the menu.  "
+                android:textColor="#000000"
+                android:textColorLink="#FFFFFF"
+                 android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:paddingTop="15dp"
+                android:text="Remember :) "
+                android:textColor="#000000"
+                android:textStyle="bold" 
+                 android:textSize="20dp"/>
+
+            <TextView
+                android:id="@+id/aboutVersionCode"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:text="*If you choose to have a timer, its automatically a total of 3minutes, so you must form words as fast as you can but take note if you continusly form words your time will be longer, beacause each letter in the tile of letter has a corresponding of 5seconds, so if you form four letters of words you'll be added a seconds in the time, more than four words much better."
+                android:textColor="#000000" 
+               android:textSize="20dp"/>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:paddingTop="15dp"
+                android:text="Author: "
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:text="Ciara-MC-Elmar"
+                android:textColor="#000000" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

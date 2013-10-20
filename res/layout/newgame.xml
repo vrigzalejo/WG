@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/oranges"
+    android:orientation="vertical" >
+
+    <TableLayout
+        android:id="@+id/newGameArea"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="15dp"
+        android:background="#22f4cd6e"
+        android:stretchColumns="0" >
+
+        <TableRow android:background="#55FFFFFF" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="48sp"
+                android:layout_column="0"
+                android:layout_span="2"
+                android:background="#ccffffff"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="@string/new_target_game"
+                android:textColor="#800000"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:background="#ccffffff"
+                android:padding="8dp"
+                android:src="@drawable/icon" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/newGamewordCounts"
+            android:layout_marginTop="30dp"
+            android:background="#ccffffff" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_column="0"
+                android:background="#11000000"
+                android:paddingLeft="1dp"
+                android:text="Word Count: "
+                android:textColor="#800000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+        <TableRow android:background="#55FFFFFF" >
+
+            <RadioGroup
+                android:id="@+id/newGameWordCount"
+                android:layout_width="wrap_content"
+                android:layout_span="3"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/newWordCount1"
+                    android:text="1-30"
+                    android:textColor="#800000"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/newWordCount30"
+                    android:layout_marginLeft="30dp"
+                    android:text="1-75"
+                    android:textColor="#800000"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/newWordCount75"
+                    android:layout_marginLeft="30dp"
+                    android:text="1-75+"
+                    android:textColor="#800000"
+                    android:textSize="14sp" />
+            </RadioGroup>
+
+        </TableRow>
+
+        <TableRow android:background="#55FFFFFF" >
+
+            <TextView
+                android:id="@+id/newGameDictLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_column="0"
+                android:layout_span="3"
+                android:gravity="center"
+                android:text=""
+                android:textColor="#800000"
+                android:textSize="16sp" />
+
+        </TableRow>
+
+        <TableRow
+           
+            android:layout_marginBottom="20dp"
+            android:background="#10000040" >
+
+        </TableRow>
+ 
+ 	
+
+        <Button
+            android:id="@+id/newGameStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start Game"
+            android:background="@drawable/buttons"
+            android:textSize="18sp"
+            style="@style/button_text" />
+
+        <Button
+            android:id="@+id/newGameHelp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Instructions"
+            android:background="@drawable/buttons"
+            android:textSize="18sp"
+            style="@style/button_text" />
+
+        <Button
+            android:id="@+id/newOptions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Options"
+            android:background="@drawable/buttons"
+            android:textSize="18sp"
+            style="@style/button_text" />
+        
+        <Button
+            android:id="@+id/newExit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Exit"
+            android:background="@drawable/buttons"
+            android:textSize="18sp"
+            style="@style/button_text" />
+
+    </TableLayout>
+
+</LinearLayout>

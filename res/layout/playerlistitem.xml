@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/wordRow"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFA500"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/playerListItem"
+        android:layout_width="0dip"
+        android:layout_weight="0.6"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:bufferType="spannable"
+        android:text="word"
+        android:textColor="#FF000000"
+        android:textSize="15sp" />
+
+</LinearLayout>
