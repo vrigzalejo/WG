@@ -152,7 +152,7 @@ public class TargetGridView extends View implements OnTouchListener {
 
 	}
 
-	private void drawLetter(Canvas canvas, int index, boolean highlighted) {
+	public void drawLetter(Canvas canvas, int index, boolean highlighted) {
 		Paint textPaint;
 		Paint squarePaint;
 
@@ -166,7 +166,10 @@ public class TargetGridView extends View implements OnTouchListener {
 		float letterHeight = this.letterPaint.ascent();
 
 		if (!highlighted) {
-			if (index == 4) {
+		
+			// Modified by me 10-23-2013
+			//	if (index == 4) {
+			if (index == NineLetterWord.index1) {
 				textPaint = this.centerLetterPaint;
 				squarePaint = this.centerPaint;
 			} else {
@@ -174,7 +177,9 @@ public class TargetGridView extends View implements OnTouchListener {
 				squarePaint = this.backgroundPaint;
 			}
 		} else {
-			if (index == 4)
+			// Modified by me 10-23-2013
+			//	if (index == 4) 
+			if (index == NineLetterWord.index1)
 				squarePaint = this.middleHighlightPaint;
 			else
 				squarePaint = this.highlightPaint;

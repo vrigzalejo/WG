@@ -211,7 +211,10 @@ public class MainActivity extends Activity {
 			public void onShake() {
 
 				try {
-					// Modified by me 10-11-2013
+					// Modified by me 10-28-2013
+					enteredWordBox.setText("");
+					
+					// Modified by me 10-11-2013					
 					MainActivity.this.animateTargetGrid();
 
 					Message msg = Message.obtain();
@@ -455,8 +458,12 @@ public class MainActivity extends Activity {
 		if (word.length() < 4)
 			message = "Must be atleast 4 letters";
 		else if (!word
-				.contains(DictionaryThread.currentInstance.currentNineLetter.magicLetter))
-			message = "Must contain the middle letter: "
+				.contains(DictionaryThread.currentInstance.currentNineLetter.magicLetter)) 
+			// Modified by me 10-28-2013
+			//	&& NineLetterWord.set.length != NineLetterWord.index1)
+			// Modified by me 10-28-2013
+			//message = "Must contain the middle letter: "
+			message = "Must contain the letter: "
 					+ DictionaryThread.currentInstance.currentNineLetter.magicLetter;
 		else if (this.playerHasWord(word))
 			message = "You already have that word.";

@@ -109,6 +109,8 @@ public class NewGameActivity extends Activity implements OnClickListener{
 		newVersionCheck();
 	}
 
+
+	
 	// @Override
 	public void onResume() {
 		String dictionary = PreferenceManager.getDefaultSharedPreferences(this)
